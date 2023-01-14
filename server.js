@@ -23,7 +23,7 @@ db.initialize(process.env.MONGODB_CONN_STRING).then(() => {
 })
 
 app.get('/', (req, res) => {
-  res.json({ massage: process.env.MONGODB_CONN_STRING })
+  res.json({ massage: process.env.MESSAGE })
 })
 
 //add new movie
